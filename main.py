@@ -1,6 +1,6 @@
 import sys
 from PyQt6.QtWidgets import QApplication, QWidget, QMessageBox
-from login_form import Ui_login_form
+from ui.login_form import Ui_login_form
 
 class Login(QWidget):
     def __init__(self):
