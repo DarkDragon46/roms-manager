@@ -6,12 +6,15 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1200</width>
-    <height>721</height>
+    <width>1218</width>
+    <height>744</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="groupBox">
@@ -134,7 +137,7 @@
       <x>310</x>
       <y>90</y>
       <width>881</width>
-      <height>361</height>
+      <height>351</height>
      </rect>
     </property>
    </widget>
@@ -174,13 +177,26 @@
      <string>Mounted Drive:</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="testButton">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>30</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>testing</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1200</width>
+     <width>1218</width>
      <height>21</height>
     </rect>
    </property>
@@ -231,7 +247,7 @@
   <action name="actionFormat">
    <property name="icon">
     <iconset>
-     <normaloff>../icons/BeOS-r5-Icons-master/32x32/devices/cdwriter_unmount.png</normaloff>../icons/BeOS-r5-Icons-master/32x32/devices/cdwriter_unmount.png</iconset>
+     <normaloff>../src/icons/16x16/actions/flag.png</normaloff>../src/icons/16x16/actions/flag.png</iconset>
    </property>
    <property name="text">
     <string>Format Drive</string>
@@ -240,7 +256,7 @@
   <action name="actionArchive_Drive">
    <property name="icon">
     <iconset>
-     <normaloff>../icons/BeOS-r5-Icons-master/32x32/mimetypes/zip.png</normaloff>../icons/BeOS-r5-Icons-master/32x32/mimetypes/zip.png</iconset>
+     <normaloff>../src/icons/16x16/places/folder-documents.png</normaloff>../src/icons/16x16/places/folder-documents.png</iconset>
    </property>
    <property name="text">
     <string>Archive Drive</string>
@@ -249,7 +265,7 @@
   <action name="actionCalculate_hash">
    <property name="icon">
     <iconset>
-     <normaloff>../icons/BeOS-r5-Icons-master/32x32/apps/Calculator-icon.png</normaloff>../icons/BeOS-r5-Icons-master/32x32/apps/Calculator-icon.png</iconset>
+     <normaloff>../src/icons/16x16/apps/kformula.png</normaloff>../src/icons/16x16/apps/kformula.png</iconset>
    </property>
    <property name="text">
     <string>Calculate hash</string>
@@ -258,7 +274,7 @@
   <action name="actionDelete_game">
    <property name="icon">
     <iconset>
-     <normaloff>../icons/BeOS-r5-Icons-master/16x16/actions/cancel.png</normaloff>../icons/BeOS-r5-Icons-master/16x16/actions/cancel.png</iconset>
+     <normaloff>../src/icons/16x16/actions/cancel.png</normaloff>../src/icons/16x16/actions/cancel.png</iconset>
    </property>
    <property name="text">
     <string>Delete game</string>
@@ -267,7 +283,7 @@
   <action name="actionAbout">
    <property name="icon">
     <iconset>
-     <normaloff>../icons/BeOS-r5-Icons-master/22x22/apps/Nextcloud_ok.png</normaloff>../icons/BeOS-r5-Icons-master/22x22/apps/Nextcloud_ok.png</iconset>
+     <normaloff>../src/icons/16x16/status/dialog-information.png</normaloff>../src/icons/16x16/status/dialog-information.png</iconset>
    </property>
    <property name="text">
     <string>About</string>
@@ -276,7 +292,7 @@
   <action name="actionMount_Drive">
    <property name="icon">
     <iconset>
-     <normaloff>../icons/BeOS-r5-Icons-master/32x32/filesystems/folder_open.png</normaloff>../icons/BeOS-r5-Icons-master/32x32/filesystems/folder_open.png</iconset>
+     <normaloff>../src/icons/16x16/devices/cd-r_mount.png</normaloff>../src/icons/16x16/devices/cd-r_mount.png</iconset>
    </property>
    <property name="text">
     <string>Mount Drive</string>
@@ -285,7 +301,7 @@
   <action name="actionExit_app">
    <property name="icon">
     <iconset>
-     <normaloff>../icons/BeOS-r5-Icons-master/16x16/actions/go-home.png</normaloff>../icons/BeOS-r5-Icons-master/16x16/actions/go-home.png</iconset>
+     <normaloff>../src/icons/16x16/actions/go-home.png</normaloff>../src/icons/16x16/actions/go-home.png</iconset>
    </property>
    <property name="text">
     <string>Exit app</string>
@@ -294,7 +310,7 @@
   <action name="actionAdd_Game">
    <property name="icon">
     <iconset>
-     <normaloff>../icons/BeOS-r5-Icons-master/16x16/actions/add.png</normaloff>../icons/BeOS-r5-Icons-master/16x16/actions/add.png</iconset>
+     <normaloff>../src/icons/16x16/actions/add.png</normaloff>../src/icons/16x16/actions/add.png</iconset>
    </property>
    <property name="text">
     <string>Add Game</string>
