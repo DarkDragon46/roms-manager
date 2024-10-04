@@ -20,7 +20,7 @@ class Login(QWidget):
         if email == 'john@test.com' and password == '123456':
             QMessageBox.information(self, 'Success!', 'You Are logged in.')
         else:
-            QMessageBox.critical(self, 'Error', "invalid email or password")
+            QMessageBox.critical(self, 'Error', "invalid email or password. Please change.")
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
