@@ -154,7 +154,7 @@
      <string>Cover Art</string>
     </property>
    </widget>
-   <widget class="QComboBox" name="comboBox">
+   <widget class="QComboBox" name="MountDriveBox">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -177,17 +177,17 @@
      <string>Mounted Drive:</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="testButton">
+   <widget class="QPushButton" name="refreshDrivesBtn">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>30</y>
+      <x>260</x>
+      <y>10</y>
       <width>75</width>
       <height>23</height>
      </rect>
     </property>
     <property name="text">
-     <string>testing</string>
+     <string>Refresh</string>
     </property>
    </widget>
   </widget>
