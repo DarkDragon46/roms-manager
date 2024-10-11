@@ -1,15 +1,14 @@
-import psutil
-import ui.mainwindow
+from src.logic.usb_service import USBService
 
-class triggers(object):
+class triggers:
+    def __init__(self, usb_service: USBService):
+        self.usb_service = usb_service
 
-    def refreshDrives(self, mountDriveComboBox, os):
-        mountDriveComboBox.clear()
-        #dependancy injection is applicable?
-    
-    def refreshUSBDevices(self, combo, os):
+    def getMountedDrives(self, os):
+        drives = self.usb_service.get_usb_devices(os)
+        return drives
+
+    def refreshMountedDrives(self, combo, os):
         combo.clear()
-        drives = self.checkUSBDevices(os)
+        drives = self.usb_service.get_usb_devices(os)
         combo.addItems(drives)
-        
-        
