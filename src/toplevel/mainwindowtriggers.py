@@ -10,6 +10,9 @@ class MainWindowTriggers:
     def getMountedDrives(self, os):
         drives = self.usb_service.get_usb_devices(os)
         return drives
+    
+    def getSelectedMountedDrive(self):
+        self.usb_service.getDrive()
 
     def refreshMountedDrives(self, combo, os):
         combo.clear()
@@ -18,3 +21,9 @@ class MainWindowTriggers:
     
     def showAboutMessagebox(self):
         return self.messagebox_service.aboutBox(self.parent)
+    
+    def mountDrive(self, MountDriveBox, refreshButton):
+        selected_drive_to_mount = self.usb_service.getDrive(MountDriveBox)
+        MountDriveBox.setDisabled(True)
+        refreshButton.setDisabled(True)
+        #load in data

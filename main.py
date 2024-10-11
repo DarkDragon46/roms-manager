@@ -28,9 +28,9 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         #check drives on buttonclick
         self.refreshDrivesBtn.clicked.connect(lambda: self.mainwindow_trigger_instance.refreshMountedDrives(self.MountDriveBox, os))
-
         self.actionAbout.triggered.connect(self.mainwindow_trigger_instance.showAboutMessagebox)
-        
+
+        self.actionMount_Drive.triggered.connect(lambda: self.mainwindow_trigger_instance.mountDrive(self.MountDriveBox, self.refreshDrivesBtn))
 if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     window = MainWindow()

@@ -17,3 +17,6 @@ class USBService:
             
             case "Mac":
                 return drives
+
+    def getDrive(self, MountDriveBox):
+        return MountDriveBox.currentText()
