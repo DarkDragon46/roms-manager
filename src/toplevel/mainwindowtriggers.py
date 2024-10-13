@@ -24,6 +24,11 @@ class MainWindowTriggers:
     
     def mountDrive(self, MountDriveBox, refreshButton):
         selected_drive_to_mount = self.usb_service.getDrive(MountDriveBox)
-        MountDriveBox.setDisabled(True)
-        refreshButton.setDisabled(True)
+        if selected_drive_to_mount == "":
+            msg = "No Drive selected. Please select a drive to mount."
+            self.messagebox_service.errorBox(self.parent, msg)
+        else:
+            MountDriveBox.setDisabled(True)
+            refreshButton.setDisabled(True)
+            self.usb_service.loadUSB(selected_drive_to_mount)
         #load in data

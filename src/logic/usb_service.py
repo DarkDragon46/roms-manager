@@ -1,4 +1,5 @@
 import psutil
+import os 
 
 class USBService:
     def get_usb_devices(self, os):
@@ -20,3 +21,7 @@ class USBService:
 
     def getDrive(self, MountDriveBox):
         return MountDriveBox.currentText()
+
+    def loadUSB(self, drive):
+        # load drive information here
+        
