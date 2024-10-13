@@ -24,4 +24,14 @@ class USBService:
 
     def loadUSB(self, drive):
         # load drive information here
+        os.walk(drive)
+        root = os.listdir(drive)
+        found_roms_folder = False
+        for i in root:
+            if root[i] == "roms":
+                #if roms folder exists go inside
+                found_roms_folder = True
+        if found_roms_folder == False:
+            os.mkdir('roms')
+            
         
