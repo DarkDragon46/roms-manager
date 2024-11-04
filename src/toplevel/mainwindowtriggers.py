@@ -30,5 +30,6 @@ class MainWindowTriggers:
         else:
             MountDriveBox.setDisabled(True)
             refreshButton.setDisabled(True)
-            self.usb_service.loadUSB(selected_drive_to_mount)
+            roms_folder_path = self.usb_service.loadUSB(selected_drive_to_mount)
+
         #load in data
