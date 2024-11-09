@@ -32,8 +32,10 @@ class USBService:
         found_roms_folder = False
 
         for folder in root:
+            print(folder)
             if folder == "roms":
-                os.chdir(folder)
+                roms_path = os.path.join(drive, folder)
+                print(os.listdir(roms_path))
                 #if roms folder exists go inside
                 found_roms_folder = True
                 print(Path(folder).resolve())
